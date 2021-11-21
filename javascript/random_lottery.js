@@ -67,9 +67,9 @@ const display_random_numbers = () => {
   for(let col = 0; col < total_balls; col++) {
     random_balls[col].innerHTML = random_6_numbers[col];
   }
-
-  const random_lucky = random_6_numbers[5];
 }
+
+const random_lucky = random_6_numbers[5];
 
 export { random_6_numbers };
 export { random_lucky };

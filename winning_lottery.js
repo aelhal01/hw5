@@ -1,15 +1,24 @@
-//FOR WINNING NUMBERS
-const winning_balls = document.querySelectorAll(".wballs");
+// FOR WINNING NUMBERS
+var win_5_numbers = prompt("Enter the first 5 winning numbers – the numbers should be entered separated by a space.").split(/[ ,]+/);
+var win_lucky = prompt("Enter the Lucky Ball.");
 
-let winning_numbers = prompt("Enter the first 5 winning numbers – the numbers should be entered separated by a space.").split(/[ ,]+/);
-let wlucky = prompt("Enter the Lucky Ball");
+var win_6_numbers = win_5_numbers;
 
-let wlucky = winning_numbers[5];
+const check_win_numbers = () => {
+  //sorts win_5_numbers
+  win_5_numbers.sort((num_1, num_2) => (num_1 - num_2));
 
-display_winning_number();
+  //copies the chosen lucky ball to the array win_6_numbers
+  win_6_numbers[5] = win_lucky;
+}
+check_win_numbers();
 
-const display_winning_number = () => {
+const win_balls = document.querySelectorAll(".wballs");
+
+//displays the winning numbers
+const display_win_number = () => {
   for(let col=0; col < 6; col++) {
-    winning_balls[col].innerHTML = winning_numbers[col];
+    win_balls[col].innerHTML = win_6_numbers[col];
   }
 }
+display_win_number();

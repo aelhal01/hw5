@@ -63,10 +63,7 @@
       <!--<script type="module" src="javascript/results.js"></script>-->
       <script type="text/javascript">
         console.log(final_random);
-        console.log(rand_lucky);
-
         console.log(win_5_numbers);
-        console.log(win_lucky);
         //ANALYSIS OF DATA
         // Function to return commonElements
         //  Compare the first 5 numbers
@@ -97,6 +94,8 @@
 
         //Compare the lucky balls
         const rand_lucky = final_random[5];
+        console.log(rand_lucky);
+        console.log(win_lucky);
         function luckyMatch(w_lucky, r_lucky){
           if (w_lucky == r_lucky) {
             document.getElementById("lucky_ball_match").innerHTML = "Yes";

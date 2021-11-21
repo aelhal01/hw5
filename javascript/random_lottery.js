@@ -6,12 +6,12 @@ const lucky_max = 18;
 
 const lucky_index= 5;
 
-let random_6_numbers=[total_balls];
+let random_6_numbers = [total_balls];
 
 const random_balls = document.querySelectorAll(".balls");
 
 const button_run = document.querySelector("#button_run");
-button_run.addEventListener("click", () => pick_6_numbers());
+button_run.addEventListener("click", () => random_6_numbers = pick_6_numbers());
 
 //picks 1 random number
 //  if the column number is less than 5, then the random number is between 1 and 48
@@ -60,6 +60,7 @@ const check_random_numbers = () => {
   random_6_numbers[lucky_index] = random_lucky;
 
   display_random_numbers();
+  return random_6_numbers;
 }
 
 //displays the random numbers on the balls

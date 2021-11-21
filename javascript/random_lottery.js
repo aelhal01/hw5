@@ -70,6 +70,7 @@ const display_random_numbers = () => {
 }
 
 const random_lucky = random_6_numbers[5];
+const test_js = "successful";
 
 //export { random_6_numbers };
 //export { random_lucky };

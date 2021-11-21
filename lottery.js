@@ -69,8 +69,9 @@ const display_random_numbers = () => {
   }
 }
 
-
-
 //FOR WINNING NUMBERS
-let winning_numbers = prompt("Enter the first 5 winning numbers – the numbers should be entered separated by a space.").split(/[ ,]+/);
-console.log(winning_numbers);
+button_run.addEventListener("click", () => get_winning_numbers());
+
+cont get_winning_numbers = () => {
+  let winning_numbers = prompt("Enter the first 5 winning numbers – the numbers should be entered separated by a space.").split(/[ ,]+/);
+}

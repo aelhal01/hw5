@@ -7,7 +7,7 @@ const lucky_max = 18;
 const lucky_index= 5;
 
 let random_6_numbers = [total_balls];
-const final_random = random_6_numbers;
+var final_random = random_6_numbers;
 
 const random_balls = document.querySelectorAll(".balls");
 

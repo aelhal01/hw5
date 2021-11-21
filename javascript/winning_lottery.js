@@ -10,8 +10,9 @@ const check_win_numbers = () => {
 
   //copies the chosen lucky ball to the array win_6_numbers
   win_6_numbers[5] = win_lucky;
+  return win_5_numbers;
 }
-check_win_numbers();
+win_5_numbers = check_win_numbers();
 
 const win_balls = document.querySelectorAll(".wballs");
 

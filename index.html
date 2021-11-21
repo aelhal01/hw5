@@ -83,6 +83,7 @@
 
         // Get common elements of win_5_numbers, random_5_numbers
         var random_5_numbers = final_random.splice(-1,1);
+        console.log(random_5_numbers);
         var commonElements = getCommon(win_5_numbers, random_5_numbers);
 
         const numbers_in_common = commonElements.length;
@@ -95,6 +96,7 @@
         //Compare the lucky balls
         var rand_lucky = final_random[5];
         console.log(rand_lucky);
+        console.log(final_random[5]);
         console.log(win_lucky);
         function luckyMatch(w_lucky, r_lucky){
           if (w_lucky == r_lucky) {

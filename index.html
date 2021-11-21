@@ -96,7 +96,7 @@
 
 
         //Compare the lucky balls
-        const random_lucky = final_random[5];
+        const rand_lucky = final_random[5];
         function luckyMatch(w_lucky, r_lucky){
           if (w_lucky == r_lucky) {
             document.getElementById("lucky_ball_match").innerHTML = "Yes";
@@ -106,7 +106,7 @@
             return "false";
           }
         }
-        const ball_lucky = luckyMatch(win_lucky, random_lucky);
+        const ball_lucky = luckyMatch(win_lucky, rand_lucky);
         document.getElementById("amount_won").innerHTML = 9;
       </script>
 

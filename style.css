@@ -23,11 +23,11 @@ header {
     width: 60%;
 }
 
-#circles_ul {
+#balls_ul {
   text-align: center;
   font-size: 1.8em;
 }
-.circles {
+.balls {
   background-image: linear-gradient(180deg, cyan, blue);
   border: 5px solid white;
   border-radius: 50px;

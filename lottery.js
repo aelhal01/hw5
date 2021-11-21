@@ -1,5 +1,19 @@
+//FOR WINNING NUMBERS
+let winning_numbers = prompt("Enter the first 5 winning numbers – the numbers should be entered separated by a space.").split(/[ ,]+/);
+
+const winning_balls = document.querySelectorAll(".wballs");
+
+display_winning_number();
+
+const display_winning_number = () => {
+  for(let col=0; col < 6; col++) {
+    winning_balls[col].innerHTML = winning_numbers[col];
+  }
+}
+
+
 //FOR RANDOM NUMBERS
-const total_balls = 7;
+const total_balls = 6;
 const normal_balls = 5;
 const normal_balls_max = 48;
 const lucky_max = 18;
@@ -68,5 +82,3 @@ const display_random_numbers = () => {
     random_balls[col].innerHTML = random_6_numbers[col];
   }
 }
-
-let winning_numbers = prompt("Enter the first 5 winning numbers – the numbers should be entered separated by a space.").split(/[ ,]+/);

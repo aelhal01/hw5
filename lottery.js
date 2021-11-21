@@ -1,7 +1,10 @@
 //FOR WINNING NUMBERS
-let winning_numbers = prompt("Enter the first 5 winning numbers – the numbers should be entered separated by a space.").split(/[ ,]+/);
-
 const winning_balls = document.querySelectorAll(".wballs");
+
+let winning_numbers = prompt("Enter the first 5 winning numbers – the numbers should be entered separated by a space.").split(/[ ,]+/);
+let wlucky = prompt("Enter the Lucky Ball");
+
+let wlucky = winning_numbers[5];
 
 display_winning_number();
 
@@ -41,7 +44,7 @@ const pick_1_number = col => {
 }
 
 
-//pick all 7 random numbers
+//pick all 6 random numbers
 const pick_6_numbers = () => {
   for (let col = 0; col < total_balls; col++) {
     random_6_numbers[col] = pick_1_number(col);

@@ -76,3 +76,21 @@ header {
 #button_run:hover {
   cursor: pointer;
 }
+
+.analysis h3{
+  text-align: center;
+  text-decoration: underline;
+  color: black;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 20px auto;
+  padding: 2px;
+}
+.analysis p{
+  text-align: center;
+  color: black;
+  font-weight: normal;
+  font-size: 1em;
+  margin: 20px auto;
+  padding: 2px;
+}

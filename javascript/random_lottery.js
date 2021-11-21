@@ -68,3 +68,7 @@ const display_random_numbers = () => {
     random_balls[col].innerHTML = random_6_numbers[col];
   }
 }
+
+//export info to use in analysis.js
+export {random_lucky};
+export {random_6_numbers};

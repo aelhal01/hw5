@@ -23,5 +23,5 @@ const display_win_number = () => {
 }
 display_win_number();
 
-export { win_lucky };
-export { win_5_numbers };
+//export { win_lucky };
+//export { win_5_numbers };

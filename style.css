@@ -4,10 +4,19 @@
 }
 
 body {
-  background-image: -moz-linear-gradient(to left, blue, cyan, blue);
+  background-image: linear-gradient(180deg, blue, cyan);
   color: white;
   text-shadow: 2px 2px black;
 }
 header {
-  background-image: -moz-linear-gradient(to left, red, yellow, red);
+    background-image: linear-gradient(180deg, red, yellow);
+    font-size: 2.9em;
+    text-align: center;
+    border: 6px solid white;
+    border-radius: 50px;
+    letter-spacing: 0.2em;
+    margin: 20px auto;
+    padding: 5px 10px;
+    width: 55%;
+    
 }

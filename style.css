@@ -22,18 +22,17 @@ header {
     padding: 5px 10px;
     width: 60%;
 }
-h1 {
+.winning h1, .random h1 {
   text-align: center;
   color: #000;
   font-size: 1.5em;
   padding: 10px;
 }
-
 #balls_ul {
   text-align: center;
   font-size: 1.8em;
 }
-.balls {
+.wballs, .balls {
   background-image: linear-gradient(180deg, cyan, blue);
   border: 5px solid white;
   border-radius: 50px;
@@ -45,7 +44,7 @@ h1 {
   margin: 40px 30px;
   display: inline-block;
 }
-.lucky {
+.wlucky, .lucky {
   background-image: linear-gradient(180deg, red, black);
   border: 5px solid white;
   font-size: 1.8em;

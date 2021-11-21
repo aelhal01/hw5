@@ -8,3 +8,6 @@ body {
   color: white;
   text-shadow: 2px 2px black;
 }
+header {
+  background-image: -moz-linear-gradient(to left, red, yellow, red);
+}

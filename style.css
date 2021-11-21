@@ -24,8 +24,8 @@ header {
 }
 .winning h1, .random h1 {
   text-align: center;
-  margin: 50%;
-  text-decoration-color: black;
+  color: black;
+  font-weight: bold;
   font-size: 1.5em;
   padding: 10px;
 }

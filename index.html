@@ -89,10 +89,10 @@
         function luckyMatch(w_lucky, r_lucky){
           if (w_lucky == r_lucky) {
             document.getElementById("lucky_ball_match").innerHTML = "Yes";
-            return true;
+            return "true";
           } else {
             document.getElementById("lucky_ball_match").innerHTML = "No";
-            return false;
+            return "false";
           }
         }
         const ball_lucky = luckyMatch(win_lucky, random_lucky);

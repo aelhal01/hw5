@@ -5,11 +5,14 @@
 
 body {
   background-image: linear-gradient(180deg, blue, cyan);
+  background-position: center;
+  background-size: cover;
+  position: relative;
   color: white;
   text-shadow: 2px 2px black;
 }
 header {
-    background-image: linear-gradient(180deg, red, yellow);
+    background: #FF6B00;
     font-size: 2.9em;
     text-align: center;
     border: 6px solid white;

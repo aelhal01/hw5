@@ -27,14 +27,14 @@
         const winning_numbers = [];
         const wlucky = [];
 
-        const winning_balls = document.querySelectorAll(".wballs");
-
         winning_numbers = prompt("Enter the first 5 winning numbers – the numbers should be entered separated by a space.").split(/[ ,]+/);
         wlucky = prompt("Enter the Lucky Ball.");
 
         let wlucky = winning_numbers[5];
 
         display_winning_number();
+
+        const winning_balls = document.querySelectorAll(".wballs");
 
         const display_winning_number = () => {
           for(let col=0; col < 6; col++) {
@@ -60,6 +60,8 @@
       </div>
       <h2 id="button_run">RUN</h2>
     </section>
+
+    <h2 id="button_compare">COMPARE</h2>
 
     <script type="text/javascript" src="random_lottery.js"></script>
   </body>

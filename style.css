@@ -27,7 +27,7 @@ header {
   font-size: 1.8em;
 }
 .balls {
-  background-image: linear-gradient(180deg, blue, cyan);
+  background: #2478FF;
   border: 5px solid #00004A;
   border-radius: 50px;
   font-size: 1.8em;
@@ -39,7 +39,7 @@ header {
   display: inline-block;
 }
 .lucky {
-  background-image: linear-gradient(180deg, red, black);
+  background: #D62C2C;
   border: 5px solid #990202;
   font-size: 1.8em;
   list-style: none;

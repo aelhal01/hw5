@@ -23,6 +23,8 @@
           <li class="wballs wlucky"></li>
         </ul>
       </div>
+
+      <!--request and display winning numbers-->
       <script type="text/javascript">
         var win_5_numbers = prompt("Enter the first 5 winning numbers – the numbers should be entered separated by a space.").split(/[ ,]+/);
         var win_lucky = prompt("Enter the Lucky Ball.");
@@ -30,16 +32,17 @@
         var win_6_numbers = win_5_numbers;
 
         const check_win_numbers = () => {
-          //sorts random_5_numbers
+          //sorts win_5_numbers
           win_5_numbers.sort((num_1, num_2) => (num_1 - num_2));
 
-          //copies 1 lucky ball from the array random_6_numbers
+          //copies the chosen lucky ball to the array win_6_numbers
           win_6_numbers[5] = win_lucky;
         }
         check_win_numbers();
 
         const win_balls = document.querySelectorAll(".wballs");
 
+        //displays the winning numbers
         const display_win_number = () => {
           for(let col=0; col < 6; col++) {
             win_balls[col].innerHTML = win_6_numbers[col];
@@ -65,6 +68,34 @@
       </div>
       <h2 id="button_run">RUN</h2>
     </section>
+
+    <section class="analysis">
+      <h3>Numbers Matched: </h3>
+      <span>
+        <p id="common_howMany"></p>
+      </span>
+
+      <script type="text/javascript">
+        // Function to return commonElements
+        function getCommon(win_6_numbers, random_6_numbers) {
+          var common = [];                   // Array to contain common elements
+
+          for(var i=0 ; i<win_6_numbers.length ; ++i) {
+            for(var j=0 ; j<random_6_numbers.length ; ++j) {
+              if(win_6_numbers[i] == random_6_numbers[j]) {     // If element is in both the arrays
+                common.push(win_6_numbers[i]);        // Push to common array
+              }
+            }
+          }
+
+          return common;                     // Return the common elements
+        }
+
+        // Get common elements of win_6_numbers, random_6_numbers
+        var commonElements = getCommon(win_6_numbers, random_6_numbers);
+
+        document.getElementById("common_howMany").innerHTML = common.length;
+      </script>
 
     <h2 id="button_compare">COMPARE</h2>
 

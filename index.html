@@ -80,7 +80,7 @@
         }
 
         // Get common elements of win_5_numbers, random_5_numbers
-        var random_5_numbers = random_6_numbers.splice(-1,1);
+        var random_5_numbers = final_random.splice(-1,1);
         var commonElements = getCommon(win_5_numbers, random_5_numbers);
 
         document.getElementById("common_howMany").innerHTML = commonElements.length;

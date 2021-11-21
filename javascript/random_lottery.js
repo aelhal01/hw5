@@ -7,11 +7,12 @@ const lucky_max = 18;
 const lucky_index= 5;
 
 let random_6_numbers = [total_balls];
+const final_random = random_6_numbers;
 
 const random_balls = document.querySelectorAll(".balls");
 
 const button_run = document.querySelector("#button_run");
-button_run.addEventListener("click", () => random_6_numbers = pick_6_numbers());
+button_run.addEventListener("click", () => final_random = pick_6_numbers());
 
 //picks 1 random number
 //  if the column number is less than 5, then the random number is between 1 and 48

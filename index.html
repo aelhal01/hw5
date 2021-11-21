@@ -24,10 +24,19 @@
         </ul>
       </div>
       <script type="text/javascript">
-        var win_numbers = prompt("Enter the first 5 winning numbers – the numbers should be entered separated by a space.").split(/[ ,]+/);
-        var wlucky = prompt("Enter the Lucky Ball.");
+        var win_5_numbers = prompt("Enter the first 5 winning numbers – the numbers should be entered separated by a space.").split(/[ ,]+/);
+        var win_lucky = prompt("Enter the Lucky Ball.");
 
-        win_numbers[5] = wlucky;
+        check_random_numbers();
+
+        const check_win_numbers = () => {
+          //sorts random_5_numbers
+          win_5_numbers.sort((num_1, num_2) => (num_1 - num_2));
+
+          //copies 1 lucky ball from the array random_6_numbers
+          var win_6_numbers = win_5_numbers[];
+          win_6_numbers[5]=win_lucky;
+      }
 
         display_winning_number();
 
@@ -35,7 +44,7 @@
 
         const display_win_number = () => {
           for(let col=0; col < 6; col++) {
-            winning_balls[col].innerHTML = win_numbers[col];
+            win_balls[col].innerHTML = win_6_numbers[col];
           }
         }
       </script>

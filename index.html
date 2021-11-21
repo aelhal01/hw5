@@ -27,12 +27,13 @@
         var win_5_numbers = prompt("Enter the first 5 winning numbers – the numbers should be entered separated by a space.").split(/[ ,]+/);
         var win_lucky = prompt("Enter the Lucky Ball.");
 
+        var win_6_numbers = win_5_numbers;
+
         const check_win_numbers = () => {
           //sorts random_5_numbers
           win_5_numbers.sort((num_1, num_2) => (num_1 - num_2));
 
           //copies 1 lucky ball from the array random_6_numbers
-          var win_6_numbers = win_5_numbers;
           win_6_numbers[5]=win_lucky;
         }
         check_win_numbers();

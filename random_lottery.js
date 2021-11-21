@@ -45,7 +45,7 @@ const check_random_numbers = () => {
   random_5_numbers.sort((num_1, num_2) => (num_1 - num_2));
 
     //copies 1 lucky ball from the array random_6_numbers
-  let random_lucky = random_6_numbers[lucky_index];
+  let lucky = random_6_numbers[lucky_index];
 
   for(let col = 0; col < normal_balls; col++) {
     if(random_5_numbers[col] === random_5_numbers[col + 1]) {

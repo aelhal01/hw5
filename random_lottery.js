@@ -1,4 +1,3 @@
-//FOR RANDOM NUMBERS
 const total_balls = 6;
 const normal_balls = 5;
 const normal_balls_max = 48;

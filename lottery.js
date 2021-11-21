@@ -1,4 +1,4 @@
-
+//FOR RANDOM NUMBERS
 const total_balls = 7;
 const normal_balls = 5;
 const normal_balls_max = 48;
@@ -41,7 +41,7 @@ const check_random_numbers = () => {
     //copies 5 numbers from the array random_6_numbers
   random_5_numbers = random_6_numbers.slice(0, normal_balls);
 
-  //sort random_5_numbers
+  //sorts random_5_numbers
   random_5_numbers.sort((num_1, num_2) => (num_1 - num_2));
 
     //copies 1 lucky ball from the array random_6_numbers
@@ -49,7 +49,7 @@ const check_random_numbers = () => {
 
   for(let col = 0; col < normal_balls; col++) {
     if(random_5_numbers[col] === random_5_numbers[col + 1]) {
-      //duplicate number gets new number
+      //duplicate number gets a new number
       pick_6_numbers();
       return;
     }
@@ -62,8 +62,15 @@ const check_random_numbers = () => {
   display_random_numbers();
 }
 
+//displays the random numbers on the balls
 const display_random_numbers = () => {
   for(let col = 0; col < total_balls; col++) {
     random_balls[col].innerHTML = random_6_numbers[col];
   }
 }
+
+
+
+//FOR WINNING NUMBERS
+let winning_numbers = prompt("Enter the first 5 winning numbers – the numbers should be entered separated by a space.").split(/[ ,]+/);
+console.log(winning_numbers);

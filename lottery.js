@@ -43,8 +43,24 @@ const check_random_numbers = () => {
 
     //copies 1 lucky ball from the array random_6_numbers
   let lucky = random_6_numbers[lucky_index];
+
+  for(let col = 0; col < normal_balls; col++) {
+    if(random_5_numbers[col] === random_5_numbers[col + 2]) {
+      //duplicate number gets new number
+      pick_6_numbers();
+      return;
+    }
+  }
+
+  //copies 5 numbers from the array random_5_numbers
+  random_6_numbers = random_5_numbers.slice(0, normal_balls);
+  random_6_numbers[lucky_index] = lucky;
+
+  display_random_numbers();
 }
 
 const display_random_numbers = () => {
-
+  for(let col = 0; col < total_balls; col++) {
+    random_balls[col].innerHTML = random_6_numbers[col];
+  }
 }

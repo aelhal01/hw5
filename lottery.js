@@ -48,7 +48,7 @@ const check_random_numbers = () => {
   let lucky = random_6_numbers[lucky_index];
 
   for(let col = 0; col < normal_balls; col++) {
-    if(random_5_numbers[col] === random_5_numbers[col + 2]) {
+    if(random_5_numbers[col] === random_5_numbers[col + 1]) {
       //duplicate number gets new number
       pick_6_numbers();
       return;

@@ -8,6 +8,7 @@ body {
   background-position: center;
   background-size: cover;
   position: relative;
+  color: white;
   text-shadow: 2px 2px black;
 }
 header {
@@ -27,8 +28,8 @@ header {
   font-size: 1.8em;
 }
 .balls {
-  background: #2478FF;
-  border: 5px solid #00004A;
+  background-image: linear-gradient(180deg, blue, cyan);
+  border: 5px solid white;
   border-radius: 50px;
   font-size: 1.8em;
   list-style: none;
@@ -39,29 +40,20 @@ header {
   display: inline-block;
 }
 .lucky {
-  background: #D62C2C;
-  border: 5px solid #990202;
+  background-image: linear-gradient(180deg, red, black);
+  border: 5px solid white;
   font-size: 1.8em;
   list-style: none;
   width: 75px;
   height: 75px;
   line-height: 75px;
 }
-
 #button_run {
-  display: inline-block;
-  text-decoration: none;
-  color: #000;
-  border: 1px solid #fff;
-  padding: 12px 34px;
-  font-size: 13px;
-  background: transparent;
-  position: relative;
-  cursor: pointer;
-}
-#button_run:hover {
-  color: #fff;
-  border: 1px solid #9BFF77;
-  background: #9BFF77;
-  transition: 1s;
+  background-image: linear-gradient(180deg, green, black);
+  font-size: 1.8em;
+  text-align: center;
+  width: 150px;
+  border: 5px solid white;
+  border-radius: 25px;
+  margin: 40px auto;
 }

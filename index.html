@@ -73,8 +73,8 @@
         function getCommon(win_5_numbers, random_5_numbers) {
           var common = [];                   // Array to contain common elements
 
-          for(var i=0 ; i<win_5_numbers.length ; ++i) {
-            for(var j=0 ; j<random_5_numbers.length ; ++j) {
+          for(var i = 0 ; i < win_5_numbers.length ; ++i) {
+            for(var j = 0 ; j < random_5_numbers.length ; ++j) {
               if(win_5_numbers[i] == random_5_numbers[j]) {     // If element is in both the arrays
                 common.push(win_5_numbers[i]);        // Push to common array
               }
@@ -88,7 +88,11 @@
         var random_5_numbers = final_random.splice(-1,1);
         var commonElements = getCommon(win_5_numbers, random_5_numbers);
 
-        document.getElementById("common_howMany").innerHTML = commonElements.length;
+        const numbers_in_common = commonElements.length;
+
+        document.getElementById("common_howMany").innerHTML = numbers_in_common;
+        console.log(commonElements);
+        console.log(numbers_in_common);
 
 
         //Compare the lucky balls

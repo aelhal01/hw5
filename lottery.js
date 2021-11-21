@@ -41,6 +41,9 @@ const check_random_numbers = () => {
     //copies 5 numbers from the array random_6_numbers
   random_5_numbers = random_6_numbers.slice(0, normal_balls);
 
+  //sort random_5_numbers
+  random_5_numbers.sort((num_1, num_2) => (num_1 - num_2));
+
     //copies 1 lucky ball from the array random_6_numbers
   let lucky = random_6_numbers[lucky_index];
 

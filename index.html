@@ -24,13 +24,10 @@
         </ul>
       </div>
       <script type="text/javascript">
-        const winning_numbers = [];
-        const wlucky = [];
+        var winning_numbers = prompt("Enter the first 5 winning numbers – the numbers should be entered separated by a space.").split(/[ ,]+/);
+        var wlucky = prompt("Enter the Lucky Ball.");
 
-        winning_numbers = prompt("Enter the first 5 winning numbers – the numbers should be entered separated by a space.").split(/[ ,]+/);
-        wlucky = prompt("Enter the Lucky Ball.");
-
-        let wlucky = winning_numbers[5];
+        let winning_numbers[5] = wlucky;
 
         display_winning_number();
 

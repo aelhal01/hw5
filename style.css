@@ -17,6 +17,22 @@ header {
     letter-spacing: 0.2em;
     margin: 20px auto;
     padding: 5px 10px;
-    width: 55%;
-    
+    width: 60%;
+}
+
+#balls_ul {
+  text-align: center;
+  font-size: 1.8em;
+}
+.balls {
+  background-image: linear-gradient(180deg, blue, cyan);
+  border: 5px solid white;
+  font-size: 1.8em;
+  list-style: none;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+}
+.balls_lucky {
+  background-image: linear-gradient(180deg, blue, cyan);
 }

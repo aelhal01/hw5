@@ -22,7 +22,3 @@ const display_win_number = () => {
   }
 }
 display_win_number();
-
-//export info to use in analysis.js
-export {win_lucky};
-export {win_5_numbers};

@@ -39,7 +39,7 @@ header {
   margin: 40px 30px;
   display: inline-block;
 }
-.balls_lucky {
+.lucky {
   background-image: linear-gradient(180deg, red, black);
   border: 5px solid white;
   font-size: 1.8em;

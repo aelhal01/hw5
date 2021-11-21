@@ -71,22 +71,33 @@
     </section>
 
     <section class="analysis">
-      <h3>Numbers Matched: </h3>
-      <span>
-        <p id="common_howMany"></p>
-      </span>
+      <h3>Numbers Matched:</h3>
+      <p id="common_howMany"></p>
+
+      <br>
+
+      <h3>Does the Lucky Ball match?</h3>
+      <p id="lucky_ball_match"></p>
+
+      <br>
+
+      <h3>You win:</h3>
+      <p id="amount_won"></p>
+
 
       <script type="text/javascript" src="winning_lottery.js"></script>
       <script type="text/javascript" src="random_lottery.js"></script>
       <script type="text/javascript">
+        //ANALYSIS OF DATA
         // Function to return commonElements
+        //  compares the first 5 numbers
         function getCommon(win_6_numbers, random_6_numbers) {
           var common = [];                   // Array to contain common elements
 
-          for(var i=0 ; i<win_6_numbers.length ; ++i) {
-            for(var j=0 ; j<random_6_numbers.length ; ++j) {
-              if(win_6_numbers[i] == random_6_numbers[j]) {     // If element is in both the arrays
-                common.push(win_6_numbers[i]);        // Push to common array
+          for(var i=0 ; i<win_5_numbers.length ; ++i) {
+            for(var j=0 ; j<random_5_numbers.length ; ++j) {
+              if(win_6_numbers[i] == random_5_numbers[j]) {     // If element is in both the arrays
+                common.push(win_5_numbers[i]);        // Push to common array
               }
             }
           }
@@ -95,9 +106,23 @@
         }
 
         // Get common elements of win_6_numbers, random_6_numbers
-        var commonElements = getCommon(win_6_numbers, random_6_numbers);
+        var commonElements = getCommon(win_5_numbers, random_5_numbers);
 
         document.getElementById("common_howMany").innerHTML = (commonElements.length + 1);
+
+        // compares the lucky balls
+        function luckyMatch(w_lucky, r_lucky){
+          if (w_lucky == r_lucky) {
+            document.getElementById("lucky_ball_match").innerHTML = "Yes";
+            return true;
+          } else {
+            document.getElementById("lucky_ball_match").innerHTML = "No";
+            return false;
+          }
+        }
+        const ball_lucky = luckyMatch(win_lucky, lucky);
+
+
       </script>
 
     </section>

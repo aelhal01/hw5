@@ -1,10 +1,17 @@
 
-//generates a random integer between 1 and 48
-function randomint() {
-  var random = Math.floor(Math.random()*48)+1;
-}
+const total_circles = 7;
+const normal_circles = 5;
+const normal_circles_max = 48;
+const lucky_max = 18;
 
-//generates a random integer between 1 and 48
-function randomint_lucky() {
-  var random = Math.floor(Math.random()*18)+1;
-}
+const lucky_1_index= 5;
+const lucky_2_index= 8;
+
+let random_numbers=[total_circles];
+
+const random_circles = document.querySelectorAll(".circles");
+
+const button_run = document.querySelector("#button_run");
+button_run.addEventListener("click", () => {
+  button_run.innerHTML = "BUTTON CLICKED";
+})

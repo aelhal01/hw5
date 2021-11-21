@@ -59,17 +59,9 @@ header {
   position: relative;
   cursor: pointer;
 }
-.download-btn:hover {
-  border: 1px solid #CB0001;
-  background: #CB0001;
+#button_run:hover {
+  color: #fff;
+  border: 1px solid #9BFF77;
+  background: #9BFF77;
   transition: 1s;
-}
-#button_run {
-  background-image: linear-gradient(180deg, green, black);
-  font-size: 1.8em;
-  text-align: center;
-  width: 150px;
-  border: 5px solid white;
-  border-radius: 25px;
-  margin: 40px auto;
 }

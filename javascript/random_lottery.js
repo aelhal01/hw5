@@ -70,6 +70,3 @@ const display_random_numbers = () => {
     random_balls[col].innerHTML = random_6_numbers[col];
   }
 }
-
-//export { random_6_numbers };
-//export { random_lucky };
